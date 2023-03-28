@@ -1,0 +1,51 @@
+$main-color: #fa4226;
+
+.hero {
+  margin-top: 12rem;
+
+  .hero-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    .container {
+      padding-left: 0;
+      padding-top: 5rem;
+      h4 {
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        span {
+          color: $main-color;
+        }
+      }
+      .hero-btns {
+        margin-top: 2rem;
+        a:first-child {
+          button {
+            background-color: $main-color;
+            margin-right: 1rem;
+          }
+        }
+        a {
+          padding-right: 1rem;
+          button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+    .main-car {
+      z-index: 4;
+      height: auto;
+      width: 170%;
+    }
+  }
+}

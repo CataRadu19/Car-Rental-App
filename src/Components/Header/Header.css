@@ -1,0 +1,59 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+  position: relative;
+  font-family: rubik, sans-serif;
+}
+.header-container ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 16px;
+}
+.header-container ul li {
+  padding: 0 10px 0 10px;
+}
+.header-container ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header-container ul li a:hover {
+  color: #fa4226;
+}
+.header-container .logo {
+  height: 100%;
+  width: 140px;
+}
+
+.hero-bg {
+  z-index: -2;
+  position: absolute;
+  right: 0;
+}
+
+.header-btn-container button {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 3px;
+}
+.header-btn-container button:first-child {
+  background-color: transparent;
+}
+.header-btn-container button:nth-child(2) {
+  background-color: #fa4226;
+  color: white;
+}/*# sourceMappingURL=Header.css.map */
