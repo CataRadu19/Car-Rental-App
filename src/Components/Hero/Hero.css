@@ -3,7 +3,7 @@
 }
 .hero .hero-container {
   display: flex;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 .hero .hero-container .container {
@@ -12,14 +12,19 @@
 }
 .hero .hero-container .container h4 {
   font-weight: bold;
+  color: black;
 }
 .hero .hero-container .container h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  color: black;
 }
 .hero .hero-container .container h1 span {
   color: #fa4226;
+}
+.hero .hero-container .container p {
+  color: #706f7b;
 }
 .hero .hero-container .container .hero-btns {
   margin-top: 2rem;
@@ -27,6 +32,19 @@
 .hero .hero-container .container .hero-btns a:first-child button {
   background-color: #fa4226;
   margin-right: 1rem;
+  border: 2px solid #fa4226;
+}
+.hero .hero-container .container .hero-btns a:first-child button:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}
+.hero .hero-container .container .hero-btns .button-two button {
+  border: 2px solid black;
+}
+.hero .hero-container .container .hero-btns .button-two button:hover {
+  background-color: initial;
+  color: #010103;
+  box-shadow: none;
 }
 .hero .hero-container .container .hero-btns a {
   padding-right: 1rem;
@@ -37,7 +55,9 @@
   border: none;
   padding: 1rem 2rem;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
 }
 .hero .hero-container .main-car {
   z-index: 4;

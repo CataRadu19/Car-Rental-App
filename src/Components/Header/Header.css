@@ -8,7 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
   padding: 30px 0 0 0;
   position: relative;
@@ -28,6 +28,7 @@
   color: black;
   font-size: 1rem;
   font-weight: 500;
+  transition: all 0.3s;
 }
 .header-container ul li a:hover {
   color: #fa4226;
@@ -49,11 +50,18 @@
   border: none;
   padding: 0.8rem 2rem;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 .header-btn-container button:first-child {
   background-color: transparent;
 }
+.header-btn-container button:first-child:hover {
+  color: #fa4226;
+}
 .header-btn-container button:nth-child(2) {
   background-color: #fa4226;
   color: white;
+}
+.header-btn-container button:nth-child(2):hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
 }/*# sourceMappingURL=Header.css.map */
