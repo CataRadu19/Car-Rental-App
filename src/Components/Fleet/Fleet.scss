@@ -1,0 +1,16 @@
+.fleet {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+  .fleet-titles {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  .fleet-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

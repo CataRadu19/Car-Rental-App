@@ -1,0 +1,37 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  .services-titles {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3rem;
+  }
+  .services-container {
+    display: flex;
+    justify-content: space-between;
+    .service {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      h4 {
+        font-weight: bold;
+        color: black;
+      }
+      p {
+        color: #706f7b;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: 200px;
+      }
+    }
+  }
+}
