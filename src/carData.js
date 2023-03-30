@@ -49,7 +49,7 @@ export default [
         ac: "Yes",
         transmission: "Manual",
         fuel: "Diesel",
-        link: "https://imgbox.io/ib/uhdhuQjVSX.jpg"
+        link: "https://imgbox.io/ib/NeDogJzr7s.jpg"
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ export default [
         ac: "Yes",
         transmission: "Manual",
         fuel: "Diesel",
-        link: "https://imgbox.io/ib/NeDogJzr7s.jpg"
+        link: "https://imgbox.io/ib/uhdhuQjVSX.jpg"
     },
     {
         id: 6,

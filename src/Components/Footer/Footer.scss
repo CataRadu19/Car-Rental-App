@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 22%;
+      .phone-icon,
+      .email-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        p {
+          padding-left: 1rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

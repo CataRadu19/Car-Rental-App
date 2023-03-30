@@ -1,0 +1,23 @@
+.google-play {
+  background-image: url(../../Assets/Images/bg-google.png);
+  background-position: right 100px top;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  .google-play-small {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding-bottom: 3rem;
+    margin-bottom: 6rem;
+    padding-top: 10rem;
+    .google-play-container {
+      width: 40%;
+      .google-play-buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.choose-us {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+    .main-text {
+      flex-basis: 40%;
+      button {
+        background-color: #ff4d30;
+        border: 2px solid #ff4d30;
+        border-radius: 0.3rem;
+        box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+    }
+    .services-text {
+      flex-basis: 40%;
+      .service {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+        img {
+          padding-right: 10px;
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+}

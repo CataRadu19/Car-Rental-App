@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-container div {
+  width: 22%;
+}
+.footer .footer-container div .phone-icon,
+.footer .footer-container div .email-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.footer .footer-container div .phone-icon p,
+.footer .footer-container div .email-icon p {
+  padding-left: 1rem;
+  margin-bottom: 0;
+}/*# sourceMappingURL=Footer.css.map */

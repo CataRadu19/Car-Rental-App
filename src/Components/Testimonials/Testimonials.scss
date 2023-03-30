@@ -1,0 +1,76 @@
+.testimonials {
+  background-color: #f8f8f8;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+    .text {
+      text-align: center;
+      h3 {
+        padding-bottom: 0.8rem;
+      }
+      h1 {
+        padding-bottom: 0.8rem;
+        font-weight: 700;
+      }
+      p {
+        padding-bottom: 5.6rem;
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        flex-basis: 48%;
+        border: none;
+        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+        box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+        h4 {
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-bottom: 2rem;
+        }
+        .card-line {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .card-left {
+            display: flex;
+            align-content: center;
+            .card-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding-left: 0.8rem;
+              h3 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 0;
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+            img {
+              border-radius: 50%;
+              width: 65px;
+              height: 65px;
+            }
+          }
+        }
+
+        .icon {
+          color: #fa4226;
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+  }
+}

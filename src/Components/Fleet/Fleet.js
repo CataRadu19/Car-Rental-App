@@ -19,22 +19,25 @@ export default function Fleet() {
         fuel: "Gasoline",
         link: "https://imgbox.io/ib/oZmRQPDacr.jpg"
     });
+    const [activeButton, setActiveButton] = useState(0);
 
     const handleClick = (e) => {
         const carId = e.target.dataset.carId;
         const car = carData.find((car) => car.link === carId);
+        const carIndex = carData.findIndex((car) => car.link === carId);
         setButton(car.link);
         setInfo(car);
+        setActiveButton(carIndex);
     }
 
-    const cars = carData.map((car) => {
+    const cars = carData.map((car, index) => {
+        const className = index === activeButton ? "active" : "";
         return (
-            <button id={car.link} data-car-id={car.link} onClick={handleClick}>{car.brand}</button>
+            <button className={className} key={car.id} data-car-id={car.link} onClick={handleClick}>{car.brand}</button>
         )
     });
 
 
-    console.log(info);
     return (
         <div className="fleet">
             <div className="fleet-titles">
@@ -45,16 +48,47 @@ export default function Fleet() {
             <div className="fleet-container">
                 <div className="fleet-buttons"> {cars}</div>
                 <img src={button} alt="" />
-                <div className="fleet-info">
-                    <h1>{info.brand}</h1>
-                    <p>Model: {info.model}</p>
-                    <p>Mark: {info.mark}</p>
-                    <p>Year: {info.year}</p>
-                    <p>Doors: {info.doors}</p>
-                    <p>AC: {info.ac}</p>
-                    <p>Transmission: {info.transmission}</p>
-                    <p>Fuel: {info.fuel}</p>
-                    <p>Cost: {info.cost}</p>
+
+                <div class="table-responsive fleet-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th colspan="2"><span>${info.cost}</span> / rent per day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Model</td>
+                                <td>{info.model}</td>
+                            </tr>
+                            <tr>
+                                <td>Mark</td>
+                                <td>{info.mark}</td>
+                            </tr>
+                            <tr>
+                                <td>Year</td>
+                                <td>{info.year}</td>
+                            </tr>
+                            <tr>
+                                <td>Doors</td>
+                                <td>{info.doors}</td>
+                            </tr>
+                            <tr>
+                                <td>AC</td>
+                                <td>{info.ac}</td>
+                            </tr>
+                            <tr>
+                                <td>Transmission</td>
+                                <td>{info.transmission}</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel</td>
+                                <td>{info.fuel}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button className="btn">RESERVE NOW </button>
 
                 </div>
             </div>

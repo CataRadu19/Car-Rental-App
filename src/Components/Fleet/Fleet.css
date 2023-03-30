@@ -3,6 +3,39 @@
   flex-direction: column;
   width: 65%;
   margin: 0 auto;
+  margin-bottom: 8rem;
+}
+.fleet .fleet-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fleet .fleet-container img {
+  max-width: 100%;
+  height: 330px;
+  flex-basis: 40%;
+}
+.fleet .fleet-container .fleet-buttons {
+  flex-basis: 23%;
+}
+.fleet .fleet-container .fleet-table {
+  flex-basis: 20%;
+}
+.fleet .fleet-container .fleet-table button {
+  background-color: #fa4226;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  width: 100%;
+  transition: all 0.2s;
+}
+.fleet .fleet-container .fleet-info {
+  display: none;
 }
 .fleet .fleet-titles {
   text-align: center;
@@ -13,4 +46,49 @@
 .fleet .fleet-buttons {
   display: flex;
   flex-direction: column;
+  gap: 0.7rem;
+}
+.fleet .fleet-buttons button {
+  background-color: #e9e9e9;
+  border: none;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  text-align: left;
+  transition: all 0.2s;
+}
+.fleet .fleet-buttons button:hover {
+  background-color: #fa4226;
+  color: white;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+col {
+  width: 50%;
+}
+
+.table thead tr th {
+  background-color: #fa4226;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.table thead tr th span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.table tbody tr td {
+  text-align: center;
+}
+
+.active {
+  background-color: #fa4226 !important;
+  color: white;
 }/*# sourceMappingURL=Fleet.css.map */

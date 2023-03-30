@@ -1,0 +1,16 @@
+.save-big {
+  background-color: #2d2d2d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 8rem 0;
+  padding: 6rem 0;
+  text-align: center;
+  width: 100%;
+  h3 {
+    span {
+      color: #fa4226;
+    }
+  }
+}
