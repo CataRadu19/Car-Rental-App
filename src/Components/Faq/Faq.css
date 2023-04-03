@@ -3,24 +3,37 @@
   flex-direction: column;
   width: 65%;
   margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .faq .faq-text {
   text-align: center;
+  margin-bottom: 4rem;
+}
+.faq .faq-text p {
+  color: #706f7b;
+  width: 60%;
+  margin: 0 auto;
 }
 .faq .faq-container {
   margin: 0 auto;
   width: 70%;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
 }
 .faq .faq-container .faq-box .answer {
   font-size: 1rem;
+  color: #706f7b;
 }
 .faq .faq-container .faq-box .question {
   font-size: 1.3rem;
+  color: black;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
 }
 .faq img {
   position: absolute;
   left: 0;
+  z-index: 1;
 }
 
 .answer {
@@ -37,7 +50,52 @@
 .faq-chev {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0.8rem;
+  padding: 1rem 2rem;
   align-items: center;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-chev.active .question {
+  color: white !important;
+}
+.faq-chev.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .faq .faq-container {
+    z-index: 2;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .faq img {
+    display: none;
+  }
+  .faq {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .faq {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .faq {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .faq .faq-container {
+    width: 100%;
+  }
+  .answer {
+    width: 85%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=Faq.css.map */

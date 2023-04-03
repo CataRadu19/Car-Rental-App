@@ -11,13 +11,96 @@
     margin-top: 10rem;
     padding-bottom: 3rem;
     margin-bottom: 6rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
     .google-play-container {
       width: 40%;
+      padding-bottom: 4rem;
+      h1 {
+        font-weight: 700;
+        color: black;
+        line-height: 1.4;
+      }
+      p {
+        color: #706f7b;
+        padding-bottom: 2rem;
+      }
       .google-play-buttons {
         display: flex;
         justify-content: space-between;
+        img {
+          cursor: pointer;
+        }
       }
     }
   }
+}
+
+@media only screen and (max-width: 1800px) {
+  .google-play-buttons {
+    a:nth-child(2) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  .google-play {
+    background-position: left -100px top;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .google-play {
+    background-position: left -238px top;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .google-play {
+    background: none;
+    .google-play-small {
+      width: 90%;
+      .google-play-container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+          font-size: 3rem;
+        }
+        .google-play-buttons {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .google-play {
+    .google-play-small {
+      .google-play-container {
+        width: 90%;
+        .google-play-buttons {
+          flex-direction: column;
+          align-items: center;
+          a:nth-child(2) {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
 }

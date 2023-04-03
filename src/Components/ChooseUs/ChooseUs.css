@@ -11,6 +11,19 @@
 .choose-us .text-container .main-text {
   flex-basis: 40%;
 }
+.choose-us .text-container .main-text h4 {
+  font-weight: 500;
+  color: black;
+}
+.choose-us .text-container .main-text h1 {
+  font-weight: 800;
+  color: black;
+  margin-bottom: 1rem;
+}
+.choose-us .text-container .main-text p {
+  color: #706f7b;
+  margin-bottom: 2rem;
+}
 .choose-us .text-container .main-text button {
   background-color: #ff4d30;
   border: 2px solid #ff4d30;
@@ -23,16 +36,61 @@
   text-decoration: none;
   transition: all 0.3s;
 }
+.choose-us .text-container .main-text button:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+}
 .choose-us .text-container .services-text {
-  flex-basis: 40%;
+  flex-basis: 36%;
 }
 .choose-us .text-container .services-text .service {
   display: flex;
   flex-direction: row;
   margin-bottom: 1.5rem;
 }
+.choose-us .text-container .services-text .service div h3 {
+  font-weight: bold;
+}
+.choose-us .text-container .services-text .service div p {
+  color: #706f7b;
+}
 .choose-us .text-container .services-text .service img {
   padding-right: 10px;
   height: 100%;
   width: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .choose-us {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .text-container {
+    flex-direction: column;
+  }
+  .text-container .main-text {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .text-container .services-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .choose-us .text-container .services-text {
+    width: 90%;
+  }
+  .choose-us .text-container .services-text .service {
+    flex-direction: column;
+  }
+  .choose-us .text-container .services-text .service div {
+    text-align: center;
+  }
+  .choose-us .text-container .services-text .service img {
+    width: 150px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=ChooseUs.css.map */

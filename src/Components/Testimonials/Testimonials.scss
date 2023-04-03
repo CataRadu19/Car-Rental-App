@@ -11,15 +11,21 @@
       text-align: center;
       h3 {
         padding-bottom: 0.8rem;
+        color: black;
+        font-weight: 500;
+        font-size: 1.4rem;
       }
       h1 {
         padding-bottom: 0.8rem;
-        font-weight: 700;
+        font-weight: 800;
+        font-size: 2.8rem;
+        color: black;
       }
       p {
         padding-bottom: 5.6rem;
         width: 60%;
         margin: 0 auto;
+        color: #706f7b;
       }
     }
     .cards {
@@ -27,14 +33,17 @@
       justify-content: space-between;
       .card {
         display: flex;
-        flex-basis: 48%;
+        flex-basis: 45%;
         border: none;
         padding: 2.5rem 2.5rem 2.5rem 2.5rem;
         box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+
         h4 {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           font-weight: 500;
           margin-bottom: 2rem;
+          font-family: Poppins, sans-serif;
+          color: black;
         }
         .card-line {
           display: flex;
@@ -48,6 +57,7 @@
               flex-direction: column;
               justify-content: center;
               padding-left: 0.8rem;
+              color: black;
               h3 {
                 font-size: 1.2rem;
                 font-weight: 700;
@@ -72,5 +82,58 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1050px) {
+  .testimonials {
+    .testimonials-container {
+      width: 95%;
+      .text {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonials {
+    .testimonials-container {
+      .cards {
+        .card {
+          flex-basis: 80%;
+          margin: 0 auto;
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonials .testimonials-container .cards .card .icon {
+    display: none;
+  }
+  .testimonials .testimonials-container .cards .card {
+    flex-basis: 90%;
   }
 }

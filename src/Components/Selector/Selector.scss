@@ -21,7 +21,7 @@
       margin-top: 2rem;
       position: relative;
       button {
-        background-color: $main-color;
+        background-color: #fa4226;
         color: white;
         width: 100%;
         padding: 0.8rem 0 0.8rem 0;
@@ -57,5 +57,49 @@
 }
 
 .fa-icons {
-  color: $main-color;
+  color: #fa4226;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 1050px) {
+  .selector {
+    .selectors-container {
+      .selector-item {
+        flex-basis: 45%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .selector {
+    .selectors-container {
+      .selector-item {
+        flex-basis: 100%;
+      }
+      .button-container {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1300px) {
+  .selector {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .selector {
+    width: 95%;
+  }
 }

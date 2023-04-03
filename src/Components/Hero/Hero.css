@@ -5,6 +5,7 @@
   display: flex;
   width: 65%;
   margin: 0 auto;
+  z-index: 6;
 }
 .hero .hero-container .container {
   padding-left: 0;
@@ -28,6 +29,7 @@
 }
 .hero .hero-container .container .hero-btns {
   margin-top: 2rem;
+  display: flex;
 }
 .hero .hero-container .container .hero-btns a:first-child button {
   background-color: #fa4226;
@@ -63,4 +65,44 @@
   z-index: 4;
   height: auto;
   width: 170%;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero .hero-container .container .hero-btns {
+    flex-direction: column;
+  }
+  .hero .hero-container .container .hero-btns a {
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+  .hero .hero-container .container .hero-btns a button {
+    margin-right: 0;
+  }
+  .hero .hero-container .container .hero-btns a:first-child button {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-car {
+    display: none;
+  }
+  .hero {
+    margin-top: 9rem;
+  }
+  .container {
+    z-index: 4;
+  }
+}
+@media (max-width: 1680px) {
+  .hero .hero-container {
+    width: 90%;
+  }
 }/*# sourceMappingURL=Hero.css.map */

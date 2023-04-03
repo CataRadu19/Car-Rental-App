@@ -4,6 +4,7 @@
     display: flex;
     width: 65%;
     margin: 0 auto;
+    z-index: 6;
     .container {
       padding-left: 0;
       padding-top: 5rem;
@@ -17,7 +18,7 @@
         margin-bottom: 2rem;
         color: black;
         span {
-          color: $main-color;
+          color: #fa4226;
         }
       }
       p {
@@ -25,11 +26,12 @@
       }
       .hero-btns {
         margin-top: 2rem;
+        display: flex;
         a:first-child {
           button {
-            background-color: $main-color;
+            background-color: #fa4226;
             margin-right: 1rem;
-            border: 2px solid $main-color;
+            border: 2px solid #fa4226;
             &:hover {
               background-color: #fa4226;
               box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
@@ -66,5 +68,63 @@
       height: auto;
       width: 170%;
     }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    .hero-container {
+      .container {
+        .hero-btns {
+          flex-direction: column;
+          a {
+            padding-right: 0;
+            margin-bottom: 1rem;
+            button {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hero .hero-container .container .hero-btns a:first-child button {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-car {
+    display: none;
+  }
+  .hero {
+    margin-top: 9rem;
+  }
+  .container {
+    z-index: 4;
+  }
+}
+
+@media (max-width: 1680px) {
+  .hero .hero-container {
+    width: 90%;
   }
 }

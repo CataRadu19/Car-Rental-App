@@ -4,13 +4,16 @@
   width: 65%;
   margin: 0 auto;
   margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 .services .services-titles {
   text-align: center;
-  font-weight: bold;
+  font-weight: 800 !important;
   color: black;
   margin-bottom: 3rem;
+}
+.services .services-titles h1 {
+  font-size: 2.5rem;
 }
 .services .services-container {
   display: flex;
@@ -34,4 +37,18 @@
   max-width: 100%;
   height: auto;
   width: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .services {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .services-container {
+    flex-direction: column;
+  }
+  .services-container .service {
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=Services.css.map */

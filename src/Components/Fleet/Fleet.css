@@ -43,6 +43,13 @@
   color: black;
   margin-bottom: 2rem;
 }
+.fleet .fleet-titles p {
+  color: #706f7b;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+}
 .fleet .fleet-buttons {
   display: flex;
   flex-direction: column;
@@ -73,6 +80,9 @@ col {
   width: 50%;
 }
 
+.table thead {
+  border: 1px solid #fa4226;
+}
 .table thead tr th {
   background-color: #fa4226;
   color: white;
@@ -86,9 +96,54 @@ col {
 }
 .table tbody tr td {
   text-align: center;
+  border: 1px solid black;
 }
 
 .active {
   background-color: #fa4226 !important;
   color: white;
+}
+
+@media only screen and (max-width: 1750px) {
+  .fleet {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .fleet {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fleet {
+    flex-direction: column;
+  }
+  .fleet .fleet-container {
+    flex-wrap: wrap;
+  }
+  .fleet .fleet-container .fleet-buttons {
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+  }
+  .fleet .fleet-container .fleet-table {
+    flex-basis: 35%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .fleet .fleet-container {
+    flex-direction: column;
+  }
+  .fleet .fleet-container div {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .fleet .fleet-container img {
+    flex-basis: 100%;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .fleet .fleet-container img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Fleet.css.map */

@@ -1,10 +1,30 @@
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../Assets/Images/logo.png";
 import heroBg from "../../Assets/Images/hero-bg.png";
 
 export default function Header() {
+
+  let mybutton = document.getElementById("myBtn");
+
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+  }
+
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <div className="header">
+      <button onClick={topFunction} id="myBtn" title="Go to top"><FontAwesomeIcon icon={faAngleUp} className="fa-icons" /></button>
+
       <img src={heroBg} className="hero-bg" alt="bg-car" />
 
       <div className="header-container">
@@ -36,6 +56,6 @@ export default function Header() {
           <button>Register</button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

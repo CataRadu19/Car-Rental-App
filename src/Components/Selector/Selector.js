@@ -80,7 +80,7 @@ export default function Selector() {
                     </div>
                 </div>
 
-                <div className="selector-item">
+                <div className="selector-item button-container">
                     <button>Search</button>
                 </div>
 

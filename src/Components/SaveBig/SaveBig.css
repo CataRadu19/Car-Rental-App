@@ -5,10 +5,28 @@
   flex-direction: column;
   height: auto;
   margin: 8rem 0;
-  padding: 6rem 0;
+  padding: 4rem 0;
   text-align: center;
   width: 100%;
 }
+.save-big h1 {
+  font-size: 3.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.save-big h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 .save-big h3 span {
   color: #fa4226;
+}
+
+@media only screen and (max-width: 800px) {
+  .save-big h1 {
+    font-size: 2.5rem;
+  }
+  .save-big h3 {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=SaveBig.css.map */

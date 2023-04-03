@@ -41,6 +41,13 @@
     font-weight: bold;
     color: black;
     margin-bottom: 2rem;
+    p {
+      color: #706f7b;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 300;
+    }
   }
   .fleet-buttons {
     display: flex;
@@ -75,6 +82,7 @@ col {
 
 .table {
   thead {
+    border: 1px solid #fa4226;
     tr {
       th {
         background-color: #fa4226;
@@ -94,6 +102,7 @@ col {
     tr {
       td {
         text-align: center;
+        border: 1px solid black;
       }
     }
   }
@@ -102,4 +111,67 @@ col {
 .active {
   background-color: #fa4226 !important;
   color: white;
+}
+
+@media only screen and (max-width: 1750px) {
+  .fleet {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .fleet {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fleet {
+    flex-direction: column;
+    .fleet-container {
+      flex-wrap: wrap;
+      .fleet-buttons {
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+      }
+      .fleet-table {
+        flex-basis: 35%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+}
+
+@media only screen and (max-width: 900px) {
+  .fleet {
+    .fleet-container {
+      flex-direction: column;
+      div {
+        flex-basis: 100%;
+        width: 100%;
+      }
+      img {
+        flex-basis: 100%;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .fleet {
+    .fleet-container {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
 }

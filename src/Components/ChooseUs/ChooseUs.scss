@@ -8,6 +8,19 @@
     justify-content: space-between;
     .main-text {
       flex-basis: 40%;
+      h4 {
+        font-weight: 500;
+        color: black;
+      }
+      h1 {
+        font-weight: 800;
+        color: black;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: #706f7b;
+        margin-bottom: 2rem;
+      }
       button {
         background-color: #ff4d30;
         border: 2px solid #ff4d30;
@@ -19,14 +32,26 @@
         padding: 0.8rem 1.2rem;
         text-decoration: none;
         transition: all 0.3s;
+        &:hover {
+          background-color: #fa4226;
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+        }
       }
     }
     .services-text {
-      flex-basis: 40%;
+      flex-basis: 36%;
       .service {
         display: flex;
         flex-direction: row;
         margin-bottom: 1.5rem;
+        div {
+          h3 {
+            font-weight: bold;
+          }
+          p {
+            color: #706f7b;
+          }
+        }
         img {
           padding-right: 10px;
           height: 100%;
@@ -35,4 +60,59 @@
       }
     }
   }
+}
+@media only screen and (max-width: 1750px) {
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .choose-us {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .text-container {
+    flex-direction: column;
+    .main-text {
+      flex-basis: 100%;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .services-text {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .choose-us {
+    .text-container {
+      .services-text {
+        width: 90%;
+        .service {
+          flex-direction: column;
+          div {
+            text-align: center;
+          }
+          img {
+            width: 150px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
 }
