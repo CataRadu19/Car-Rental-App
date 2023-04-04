@@ -1,0 +1,117 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  color: black;
+  .contact-info {
+    flex-basis: 35%;
+    h1 {
+      font-weight: bold;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: #706f7b;
+      margin-bottom: 2rem;
+    }
+    div {
+      margin-bottom: 1.1rem;
+      .icon {
+        padding-right: 0.7rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+  .form-container {
+    flex-basis: 50%;
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-style: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        span {
+          color: #ff4d30;
+        }
+      }
+      input,
+      textarea {
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        background-color: #f2f2f2;
+        margin-bottom: 1.4rem;
+      }
+      button {
+        background-color: #ff4d30;
+        border: 2px solid #ff4d30;
+        margin-top: 0.6rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0.7rem 2.5rem;
+        transition: all 0.3s;
+        .icon {
+          padding-right: 1rem;
+        }
+        &:hover {
+          background-color: #fa4226;
+          box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+}
+
+@media only screen and (max-width: 1460px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1050px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    .contact-info {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .form-container {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 480px) {
+}

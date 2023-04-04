@@ -13,6 +13,7 @@
   padding: 30px 0 0 0;
   position: relative;
   font-family: rubik, sans-serif;
+  margin-bottom: 2.5rem;
 }
 .header-container ul {
   display: flex;
@@ -36,12 +37,6 @@
 .header-container .logo {
   height: 100%;
   width: 140px;
-}
-
-.hero-bg {
-  z-index: -2;
-  position: absolute;
-  right: 0;
 }
 
 .header-btn-container button {
@@ -84,7 +79,7 @@
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
 }
 
-.fa-icons {
+#myBtn .fa-icons {
   color: white;
 }
 

@@ -2,19 +2,33 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../Assets/Images/logo.png";
-import heroBg from "../../Assets/Images/hero-bg.png";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [mybutton, setMybutton] = useState(null);
 
-  let mybutton = document.getElementById("myBtn");
+  useEffect(() => {
+    setMybutton(document.getElementById("myBtn"));
+  }, []);
 
+  useEffect(() => {
+    function scrollFunction() {
+      if (mybutton) {
+        mybutton.style.display =
+          document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+            ? "block"
+            : "none";
+      }
+    }
 
-  window.onscroll = function () { scrollFunction() };
+    window.addEventListener("scroll", scrollFunction);
 
-  function scrollFunction() {
-    mybutton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
-  }
-
+    return () => {
+      window.removeEventListener("scroll", scrollFunction);
+    };
+  }, [mybutton]);
 
   function topFunction() {
     document.body.scrollTop = 0;
@@ -23,31 +37,33 @@ export default function Header() {
 
   return (
     <div className="header">
-      <button onClick={topFunction} id="myBtn" title="Go to top"><FontAwesomeIcon icon={faAngleUp} className="fa-icons" /></button>
+      <button onClick={topFunction} id="myBtn" title="Go to top">
+        <FontAwesomeIcon icon={faAngleUp} className="fa-icons" />
+      </button>
 
-      <img src={heroBg} className="hero-bg" alt="bg-car" />
+
 
       <div className="header-container">
         <img src={logo} className="logo" alt="" />
         <div className="header-list">
           <ul>
             <li>
-              <a href="google.com">Home</a>
+              <Link to="/" >Home</Link>
             </li>
             <li>
-              <a href="google.com">About</a>
+              <Link to="/About" >About</Link>
             </li>
             <li>
-              <a href="google.com">Vehicle Models</a>
+              <Link to="/ModelPage" >Vehicle Models</Link>
             </li>
             <li>
-              <a href="google.com">Testimonials</a>
+              <Link to="/Testimonials" >Testimonials</Link>
             </li>
             <li>
-              <a href="google.com">Our Team</a>
+              <Link to="/OurTeamPage" >Our Team</Link>
             </li>
             <li>
-              <a href="google.com">Contact</a>
+              <Link to="/ContactPage" >Contact</Link>
             </li>
           </ul>
         </div>

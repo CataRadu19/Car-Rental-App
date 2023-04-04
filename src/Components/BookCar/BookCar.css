@@ -1,0 +1,60 @@
+.banner {
+  background-image: url("../../Assets/Images/book-banner.png");
+  display: flex;
+  height: 13rem;
+  margin-top: 7rem;
+  position: relative;
+  width: 100%;
+  margin-bottom: 7rem;
+}
+.banner .banner-overlay {
+  background-color: #2d2d2d;
+  height: 100%;
+  opacity: 0.89;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.banner .container {
+  margin: 0 auto !important;
+  max-width: 133rem !important;
+  padding: 0 2.5rem !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.banner .container .text-content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  gap: 5rem;
+  height: 20rem;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  justify-content: center;
+}
+.banner .container .text-content h2 {
+  font-weight: bold;
+  color: white;
+}
+.banner .container .text-content span {
+  align-items: center;
+  color: #ff4d30;
+  display: flex;
+  font-size: 1.7rem;
+  gap: 1rem;
+  white-space: nowrap;
+}
+.banner .container .text-content span h3 {
+  font-weight: bold;
+  color: #ff4d30;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .container .text-content {
+    flex-direction: column;
+    gap: 0;
+  }
+}/*# sourceMappingURL=BookCar.css.map */

@@ -1,0 +1,15 @@
+.models .model {
+  box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+.models .model div {
+  margin-top: 2rem;
+  text-align: center;
+}
+.models .model div h4 {
+  font-weight: bold;
+}
+.models .model div p {
+  color: #777;
+  font-weight: 600;
+}/*# sourceMappingURL=OurTeam.css.map */
