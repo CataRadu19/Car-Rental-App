@@ -49,11 +49,11 @@ export default function Fleet() {
                 <div className="fleet-buttons"> {cars}</div>
                 <img src={button} alt="" />
 
-                <div class="table-responsive fleet-table">
-                    <table class="table table-bordered">
+                <div className="table-responsive fleet-table">
+                    <table className="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="2"><span>${info.cost}</span> / rent per day</th>
+                                <th colSpan="2"><span>${info.cost}</span> / rent per day</th>
                             </tr>
                         </thead>
                         <tbody>

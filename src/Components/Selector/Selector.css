@@ -30,6 +30,7 @@
   padding: 0.8rem 0 0.8rem 0;
   position: absolute;
   bottom: 0;
+  transition: all 0.5s ease;
 }
 .selector .selectors-container .selector-item button:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);

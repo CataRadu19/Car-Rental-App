@@ -8,15 +8,15 @@ import locationData from '../../locationData';
 
 export default function Selector() {
 
-    const cars = carData.map((car) => {
+    const cars = carData.map((car, index) => {
         return (
-            <option value={car.id}>{car.brand}</option>
+            <option key={index} value={car.id}>{car.brand}</option>
         )
     });
 
-    const locations = locationData.map((location) => {
+    const locations = locationData.map((location, index) => {
         return (
-            <option value={location.id}>{location}</option>
+            <option key={index} value={location.id}>{location}</option>
         )
     });
 

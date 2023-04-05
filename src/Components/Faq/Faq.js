@@ -42,7 +42,7 @@ export default function Faq() {
             <div className="faq-container">
                 {questionList.map((faq, i) => {
                     return (
-                        <div className="faq-box" onClick={() => toggle(i)}>
+                        <div className="faq-box" key={i} onClick={() => toggle(i)}>
                             <div className={selected === i ? "faq-chev active" : "faq-chev"}>
                                 <div className="question" key={i}>
                                     {faq.question}
