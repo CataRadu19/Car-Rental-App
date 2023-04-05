@@ -5,13 +5,11 @@ import Footer from '../Components/Footer/Footer';
 
 export default function TestimonialPage() {
     return (
-
         <div>
             <Header />
             <Testimonials />
             <BookCar />
             <Footer />
         </div>
-
     );
 }

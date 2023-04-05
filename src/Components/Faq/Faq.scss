@@ -68,12 +68,6 @@
   color: black;
 }
 
-@media only screen and (max-width: 1750px) {
-}
-
-@media only screen and (max-width: 1300px) {
-}
-
 @media only screen and (max-width: 1200px) {
   .faq .faq-container {
     z-index: 2;
@@ -96,9 +90,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-}
-
 @media only screen and (max-width: 600px) {
   .faq {
     width: 100%;
@@ -112,7 +103,4 @@
     width: 85%;
     margin: 0 auto;
   }
-}
-
-@media only screen and (max-width: 480px) {
 }
