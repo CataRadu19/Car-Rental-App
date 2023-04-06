@@ -61,12 +61,31 @@
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
 }
 
+.open-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: red;
+  background-color: white;
+  margin: 0;
+  z-index: 99;
+  transition: all 1s ease-in-out;
+}
+
+.invisible {
+  display: none;
+}
+
 #myBtn {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  z-index: 99999;
   border: 2px solid white;
   outline: none;
   background-color: #fa4226;
@@ -89,13 +108,28 @@
   }
 }
 @media only screen and (max-width: 1200px) {
-  .header-list {
+  .header-container .header-list ul {
+    position: fixed;
+    left: -1400px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0;
+    z-index: 99;
+    transition: all 1s ease-in-out;
+  }
+  .header-container .header-list ul li {
+    margin-bottom: 2rem;
+  }
+  .header-container .header-btn-container {
     display: none;
   }
-  .header-btn-container {
-    display: none;
-  }
-  .hero-bg {
+  .header-container .hero-bg {
     z-index: -999;
   }
 }
