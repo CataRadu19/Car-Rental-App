@@ -29,11 +29,11 @@ export default function Footer() {
                 </div>
                 <div className="list">
                     <h4>COMPANY</h4>
-                    <a href="google.com">New York</a>
-                    <a href="google.com">Careers</a>
-                    <a href="google.com">Mobile</a>
-                    <a href="google.com">Blog</a>
-                    <a href="google.com">How we work</a>
+                    <a href="https://car-rental-radu-catalin.netlify.app/">New York</a>
+                    <a href="https://car-rental-radu-catalin.netlify.app/">Careers</a>
+                    <a href="https://car-rental-radu-catalin.netlify.app/">Mobile</a>
+                    <a href="https://car-rental-radu-catalin.netlify.app/">Blog</a>
+                    <a href="https://car-rental-radu-catalin.netlify.app/">How we work</a>
                 </div>
                 <div>
                     <h4>WORKING HOURS</h4>
