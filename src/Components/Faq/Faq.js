@@ -49,7 +49,7 @@ export default function Faq() {
                                 </div>
                                 <FontAwesomeIcon icon={faChevronDown} className="icon" />
                             </div>
-                            <div className={selected === i ? "answer show" : "answer hide"} key={i}>{faq.answer}</div>
+                            <div className={selected === i ? "rubik answer show" : "answer hide"} key={i}>{faq.answer}</div>
                         </div>
                     )
                 }

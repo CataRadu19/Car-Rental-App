@@ -1,6 +1,6 @@
 .app {
   background-color: white;
-  font-family: Rubik, sans-serif;
+  font-family: Rubik, sans-serif !important;
 }
 
 * p,

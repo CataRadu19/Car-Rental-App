@@ -127,7 +127,13 @@
   .footer-container div {
     flex-basis: 100%;
     text-align: center;
+    margin-bottom: 5rem;
+  }
+  .footer-container div p {
     margin-bottom: 2rem;
+  }
+  .footer-container div h4 {
+    margin-bottom: 1.5rem;
   }
   .footer-container div div {
     margin: 0 auto;

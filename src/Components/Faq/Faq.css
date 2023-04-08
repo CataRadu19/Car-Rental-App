@@ -91,6 +91,17 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
+  .faq .faq-text p {
+    width: 90%;
+  }
+  .faq .faq-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .faq .faq-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
   .faq .faq-container {
     width: 100%;
   }

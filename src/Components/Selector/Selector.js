@@ -22,12 +22,12 @@ export default function Selector() {
 
     return (
         <form className="selector">
-            <h2>Book a car</h2>
+            <h3>Book a car</h3>
             <div className="selectors-container">
                 <div className="selector-item">
                     <label className="selector-item-text">
                         <FontAwesomeIcon icon={faCar} className="fa-icons" />
-                        <p>Select your car type <span className="fa-icons">*</span></p>
+                        <p>Select Your Car Type <span className="fa-icons">*</span></p>
                     </label>
                     <div className="selector-item-select">
                         <select>
@@ -81,7 +81,7 @@ export default function Selector() {
                 </div>
 
                 <div className="selector-item button-container">
-                    <button>Search</button>
+                    <button className="rubik">Search</button>
                 </div>
 
 

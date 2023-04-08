@@ -41,7 +41,7 @@ export default function Fleet() {
     return (
         <div className="fleet">
             <div className="fleet-titles">
-                <h4>Vehicle Models</h4>
+                <h4 className='rubik'>Vehicle Models</h4>
                 <h1>Our rental fleet</h1>
                 <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
             </div>

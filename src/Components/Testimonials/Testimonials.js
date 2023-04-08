@@ -9,9 +9,9 @@ export default function Testimonials() {
         <div className="testimonials">
             <div className="testimonials-container">
                 <div className="text">
-                    <h3>Reviewed by People</h3>
+                    <h3 className="rubik">Reviewed by People</h3>
                     <h1>Client's Testimonials</h1>
-                    <p>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
+                    <p className="rubik">Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients have experienced our service and results, and they're eager to share their positive experiences with you.</p>
                 </div>
                 <div className="cards">
                     <div className="card">
@@ -21,7 +21,7 @@ export default function Testimonials() {
                                 <img src={testi1} alt="testi1" />
                                 <div className="card-text">
                                     <h3>Parry Hotter</h3>
-                                    <p>Targu Mures </p>
+                                    <p className="rubik">Targu Mures </p>
                                 </div>
                             </div>
                             <FontAwesomeIcon icon={faQuoteRight} className="icon" />
@@ -35,7 +35,7 @@ export default function Testimonials() {
                                 <img src={testi2} alt="testi2" />
                                 <div className="card-text">
                                     <h3>Ron Rizzly</h3>
-                                    <p>Cluj</p>
+                                    <p className="rubik">Cluj</p>
                                 </div>
                             </div>
                             <FontAwesomeIcon icon={faQuoteRight} className="icon" />

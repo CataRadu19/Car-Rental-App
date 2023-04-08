@@ -27,6 +27,9 @@
       .hero-btns {
         margin-top: 2rem;
         display: flex;
+        a button {
+          font-family: Rubik, sans-serif;
+        }
         a:first-child {
           button {
             background-color: #fa4226;
@@ -82,6 +85,7 @@
             margin-bottom: 1rem;
             button {
               margin-right: 0;
+              width: 70%;
             }
           }
         }
@@ -90,15 +94,6 @@
   }
   .hero .hero-container .container .hero-btns a:first-child button {
     margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    text-align: center;
-  }
-  .hero-btns {
-    justify-content: center;
   }
 }
 
@@ -117,5 +112,17 @@
 @media (max-width: 1680px) {
   .hero .hero-container {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  .hero-btns {
+    justify-content: center;
+  }
+  .hero {
+    margin-top: 0;
   }
 }

@@ -39,16 +39,22 @@
 }
 .fleet .fleet-titles {
   text-align: center;
-  font-weight: bold;
   color: black;
   margin-bottom: 2rem;
 }
+.fleet .fleet-titles h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.fleet .fleet-titles h4 {
+  font-weight: bold;
+}
 .fleet .fleet-titles p {
   color: #706f7b;
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: 500;
 }
 .fleet .fleet-buttons {
   display: flex;
@@ -87,12 +93,15 @@ col {
   background-color: #fa4226;
   color: white;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .table thead tr th span {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
+}
+.table tbody tr {
+  color: black;
 }
 .table tbody tr td {
   text-align: center;
@@ -130,12 +139,15 @@ col {
   }
 }
 @media only screen and (max-width: 900px) {
+  .fleet .fleet-titles p {
+    width: 100%;
+  }
   .fleet .fleet-container {
     flex-direction: column;
   }
   .fleet .fleet-container div {
     flex-basis: 100%;
-    width: 100%;
+    width: 75%;
   }
   .fleet .fleet-container img {
     flex-basis: 100%;

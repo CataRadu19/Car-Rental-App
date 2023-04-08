@@ -8,9 +8,12 @@
   z-index: 6;
   position: relative;
   height: auto;
-  padding: 3rem 3.5rem 3rem 4.5rem;
+  padding: 3rem 3.5rem;
   border-radius: 5px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  h3 {
+    font-weight: bold;
+  }
   .selectors-container {
     display: flex;
     justify-content: space-between;
@@ -28,6 +31,9 @@
         position: absolute;
         bottom: 0;
         transition: all 0.5s ease;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border: none;
         &:hover {
           box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.6);
         }
@@ -37,6 +43,7 @@
         input {
           width: 100%;
           padding: 0.8rem 1rem 0.8rem 1rem;
+          color: gray;
         }
       }
       .selector-item-text {
@@ -73,6 +80,8 @@
 
 @media only screen and (max-width: 768px) {
   .selector {
+    padding: 0 2rem;
+    margin-top: 6rem;
     .selectors-container {
       .selector-item {
         flex-basis: 100%;
@@ -93,5 +102,6 @@
 @media only screen and (max-width: 480px) {
   .selector {
     width: 95%;
+    padding: 0 3rem;
   }
 }
